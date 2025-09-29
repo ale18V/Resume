@@ -16,16 +16,14 @@ education:
     degree: "BSc in Computer Engineering"
     location: Bologna, Italy
     date: Sep 2021 - Nov 2024
+    gpa: "29.38/30"
     points:
-      - "Final Grade: 110/110 cum laude"
-      - "GPA: 29.38/30"
-      - "Awarded two merit-based scholarships"
-  - name: University of California, Riverside
-    degree: "Exchange Student in Computer Engineering"
+      - "Graduated with 110/110 cum laude and awarded 2x merit scholarships"
+  - name: University of California Riverside
+    degree: "Exchange Student"
     location: Riverside, CA
     date: Jan 2024 - Jul 2024
-    points:
-      - "GPA: 3.95/4.0"
+    gpa: "3.95/4.0"
 
 experience:
   - role: Software Engineer
@@ -35,7 +33,7 @@ experience:
     points:
       - Led development of a federated learning platform using a microservices architecture with RabbitMQ, gRPC, and REST APIs.
       - Built federated learning client/server with Flwr and PyTorch; integrated monitoring with Grafana, Prometheus, and Loki.
-      - Developed a web app to manage local clients (FastAPI backend, React frontend).
+      - Built a web application for managing the local federated learning clients using FastAPI for the backend and React for the frontend.
       - Set up end-to-end CI/CD with GitHub Actions and Docker Bake for multi-arch builds, testing, and containerized deployments.
   - role: Full Stack Engineer
     name: Polarity
@@ -67,21 +65,21 @@ projects:
     skills: Bachelor Thesis
     date: 2024
     points:
-      - Researched blockchain-based federated learning; proposed a proof-of-stake architecture addressing performance and security flaws.
-      - Implemented a decentralized P2P network with bidirectional gRPC, PoS consensus resilient to malicious updates, and asymmetric-key integrity.
-      - Trained test models with PyTorch; demonstrated improved security over vanilla FL. (github.com/ale18V/FedChain)
+      - Researched blockchain-based federated learning and architected a proof-of-stake solution improving on performance and security flaws of the literature.
+      - Developed the decentralized system using Python - implemented the peer-to-peer network using bidirectional gRPC, engineered a PoS consensus resilient to malicious updates, and secured integrity of messages with asymmetric cryptography.
+      - Trained models on the blockchain using PyTorch and demonstrated improved security over vanilla federated learning.
   - name: Stock Price Predictor
     skills: GPU Programming Class Project
     date: 2024
     points:
       - Designed a neural network for stock prediction in pure Python/NumPy and PyTorch.
-      - Ported the algorithm to CUDA achieving ~3× speedup over CPU. (github.com/ale18V/CudaStonks)
+      - Ported the algorithm to CUDA achieving ~3x speedup over CPU. (github.com/ale18V/CudaStonks)
 
 skills:
   - category: Programming Languages
     skills: Python, Java, C/C++, JavaScript, TypeScript, PHP, SQL, Bash
   - category: Tools and Frameworks
-    skills: Git and Github, Linux, Docker, Web3, FastAPI, Flask, React, Vite, React-Native, OpenAPI, gRPC, MySQL
+    skills: Git, Github, Linux, Docker, Web3, FastAPI, Flask, React, Vite, React-Native, OpenAPI, gRPC, MySQL
   - category: Expertise
     skills: Web3, Blockchain, Machine Learning & AI, Cybersecurity & Penetration Testing, Competitive Programming, Compilers, Operating Systems, Network Protocols
   - category: Languages

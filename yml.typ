@@ -19,7 +19,8 @@
       degree: edu.degree,
       location: edu.location,
       date: edu.date,
-      ..edu.points
+      gpa: if "gpa" in edu { edu.gpa } else { none },
+      .. if "points" in edu { edu.points } else { none }
     )
   }
 }

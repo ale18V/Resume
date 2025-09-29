@@ -1,6 +1,6 @@
 #let resume(body) = {
   set list(indent: 0.23em)
-  show list: set text(size: 0.86em)
+  show list: set text(size: 0.92em)
   show link: underline
   show link: set underline(offset: 3pt)
 
@@ -10,7 +10,7 @@
   )
 
   set text(
-    size: 11pt,
+    size: 10pt,
       font: "New Computer Modern",
   )
 
@@ -29,20 +29,20 @@
   linkedin: "linkedin.com/in/jake",
   site: "github.com/jake",
 ) = {
-  align(center,
-    block[
-      #name_header(name) \
+  align(center,[ 
+    #name_header(name)
+    #block(above: 1em)[ 
       #phone |
       #link("mailto:" + email)[#email] |
       #link("https://" + linkedin)[#linkedin] |
       #link("https://" + site)[#site]
     ]
+  ]
   )
-  v(5pt)
 }
 
 #let resume_heading(txt) = {
-  show heading: set text(size: 0.92em, weight: "regular")
+  show heading: set text(size: 1.1em, weight: "regular")
 
   block[
     = #smallcaps(txt)
@@ -56,6 +56,7 @@
   degree: "B.S in Bullshit",
   location: "Foo, BA",
   date: "Aug. 1600 - May 1750",
+  gpa: none,
   ..points
 ) = {
   set block(above: 0.7em, below: 1em, )
@@ -63,13 +64,17 @@
     #grid(
       columns: (3fr, 1fr),
       align(left)[
-        *#name* - #degree
+        *#name* - #degree #if gpa != none {
+          [#text(size: 0.92em)[(GPA: #gpa)]]
+        }
       ],
       align(right)[
         #date
       ]
     )
-    #list(..points)
+    #if points.pos().len() > 0 {
+        [#list(..points)]
+     }
   ])
 }
 
@@ -115,6 +120,6 @@
   skills: "Balling, Yoga, Valorant",
 ) = {
   set block(above: 0.7em)
-  set text(size: 0.91em)
-  pad(left: 1em, right: 0.5em, block[*#category*: #skills])
+  set text(size: 0.92em)
+  pad(left: 0.46em, right: 0.23em, block[*#category*: #skills])
 }
