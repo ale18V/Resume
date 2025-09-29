@@ -44,7 +44,7 @@
     project_item(
       name: proj.name,
       skills: proj.skills,
-      date: proj.date,
+      github: proj.github,
       ..proj.points
     )
   }

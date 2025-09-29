@@ -105,12 +105,12 @@
 #let project_item(
   name: "Example Project",
   skills: "Programming Language 1, Database3",
-  date: "May 1234 - June 4321",
+  github: "github.com/jake/Example-Project",
   ..points
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 0.46em, right: 0.23em, box[
-    *#name* | _#skills _ #h(1fr) #date
+    *#name* | #skills #h(1fr) _ #text(size: 0.80em)[#link("https://" + github)[#github]] _
     #list(..points)
   ])
 }

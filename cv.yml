@@ -63,17 +63,17 @@ experience:
 projects:
   - name: Blockchain-Based Federated Learning System
     skills: Bachelor Thesis
-    date: 2024
+    github: github.com/ale18V/FedChain
     points:
       - Researched blockchain-based federated learning and architected a proof-of-stake solution improving on performance and security flaws of the literature.
       - Developed the decentralized system using Python - implemented the peer-to-peer network using bidirectional gRPC, engineered a PoS consensus resilient to malicious updates, and secured integrity of messages with asymmetric cryptography.
       - Trained models on the blockchain using PyTorch and demonstrated improved security over vanilla federated learning.
   - name: Stock Price Predictor
     skills: GPU Programming Class Project
-    date: 2024
+    github: github.com/ale18V/CudaStonks
     points:
       - Designed a neural network for stock prediction in pure Python/NumPy and PyTorch.
-      - Ported the algorithm to CUDA achieving ~3x speedup over CPU. (github.com/ale18V/CudaStonks)
+      - Ported the algorithm to CUDA achieving ~3x speedup over CPU.
 
 skills:
   - category: Programming Languages
