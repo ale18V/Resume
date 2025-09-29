@@ -37,7 +37,7 @@
 }
 
 #let yml_projects(d) = {
-  resume_heading[Projects]
+  resume_heading[Selected Projects]
   for proj in d {
     project_item(
       name: proj.name,
