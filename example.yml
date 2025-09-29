@@ -1,69 +1,80 @@
 personal:
-  name: Jake Ryan
-  phone: 123-456-7890
-  email: jake@su.edu
-  linkedin: linkedin.com/in/jake
-  site: github.com/jake
+  name: Alessandro Bombarda
+  phone: "+39 348 468 7271"
+  email: alebombarda@icloud.com
+  linkedin: linkedin.com/in/alessandrobombarda
+  site: github.com/ale18V
+
 education:
-  - name: Southwestern University
-    degree: Bachelor of Arts in Computer Science, Minor in Business
-    location: Georgetown, TX
-    date: Aug. 2018 - May 2021
-  - name: Blinn College
-    degree: Associate's in Liberal Arts
-    location: Bryan, TX
-    date: Aug. 2014 - May 2018
+  - name: EPFL
+    degree: MSc in Computer Science
+    location: Lausanne, Switzerland
+    date: Sep 2025 - Sep 2027
+  - name: University of Bologna
+    degree: "BSc in Computer Engineering (GPA: 29.38/30); 110/110 cum laude; two merit-based scholarships"
+    location: Bologna, Italy
+    date: Sep 2021 - Nov 2024
+  - name: University of California, Riverside
+    degree: "Exchange Student (GPA: 3.95/4.0)"
+    location: Riverside, CA
+    date: Jan 2024 - Jul 2024
+
 experience:
-  - role: Undergraduate Research Assistant
-    name: Texas A&M University
-    location: College Station, TX
-    date: June 2020 - Present
+  - role: Software Engineer
+    name: Asclepyus
+    location: Remote
+    date: Apr 2025 - Sep 2025
     points:
-      - Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems
-      - Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data
-      - Explored ways to visualize GitHub collaboration in a classroom setting
-  - role: Information Technology Support Specialist
-    name: Southwestern University
-    location: Georgetown, TX
-    date: Sep. 2018 - Present
+      - Led development of a federated learning platform using a microservices architecture with RabbitMQ, gRPC, and REST APIs.
+      - Built federated learning client/server with Flwr and PyTorch; integrated monitoring with Grafana, Prometheus, and Loki.
+      - Developed a web app to manage local clients (FastAPI backend, React frontend).
+      - Set up end-to-end CI/CD with GitHub Actions and Docker Bake for multi-arch builds, testing, and containerized deployments.
+  - role: Full Stack Engineer
+    name: Polarity
+    location: Reggio Emilia, Italy
+    date: Aug 2024 - Feb 2025
     points:
-      - Communicate with managers to set up campus computers used on campus
-      - Assess and troubleshoot computer problems brought by students, faculty and staff
-      - Maintain upkeep of computers, classroom equipment, and 200 printers across campus
-  - role: Artificial Intelligence Research Assistant
-    name: Southwestern University
-    location: Georgetown, TX
-    date: May 2019 - July 2019
+      - Built a React Native mobile app for a non-custodial crypto wallet with OTC trades and on-chain payments.
+      - Developed a React frontend for a crypto payment processor, including trade and swap order flows.
+      - Coordinated with clients to refine functional and design requirements.
+  - role: Cybersecurity Tutor and Competitor
+    name: ULISSE, University of Bologna
+    location: Bologna, Italy
+    date: Jan 2023 - Present
     points:
-      - Explored methods to generate video game dungeons based off of The Legend of Zelda
-      - Developed a game in Java to test the generated dungeons
-      - Contributed 50K+ lines of code to an established codebase via Git
-      - Conducted  a human subject study to determine which video game dungeon generation technique is enjoyable
-      - Wrote an 8-page paper and gave multiple presentations on-campus
-      - Presented virtually to the World Conference on Computational Intelligence
+      - Authored problems for PascalCTF 2025 and UlisseCTF 2025.
+      - Trained students for the Italian high-school cybersecurity competition; developed crypto/web challenges, dockerized and deployed them on a VPS for a preparatory CTF.
+      - Competed in weekly CTFs and the national university tournament CyberCup.IT.
+  - role: Cybersecurity Trainee
+    name: CyberChallenge.IT
+    location: Italy
+    date: Jan 2023 - Jul 2023
+    points:
+      - Admitted to a 6-month training program covering cryptography, web, software, and network security.
+      - Qualified for the University of Bologna team after winning the local selection.
+      - Placed in the top eight by exploiting/patching vulnerabilities and managing team infrastructure.
+
 projects:
-  - name: Gitlytics
-    skills: Python, Flask, React, PostgreSQL, Docker
-    date: June 2020 - Present
+  - name: Blockchain-Based Federated Learning System
+    skills: Bachelor Thesis
+    date: 2024
     points:
-      - Developed a full-stack web application using with Flask serving a REST API with React as the frontend
-      - Implemented GitHub OAuth to get data from user’s repositories
-      - Visualized GitHub data to show collaboration
-      - Used Celery and Redis for asynchronous tasks
-  - name: Simple Paintball
-    skills: Spigot API, Java, Maven, TravisCI, Git
-    date: May 2018 - May 2020
+      - Researched blockchain-based federated learning; proposed a proof-of-stake architecture addressing performance and security flaws.
+      - Implemented a decentralized P2P network with bidirectional gRPC, PoS consensus resilient to malicious updates, and asymmetric-key integrity.
+      - Trained test models with PyTorch; demonstrated improved security over vanilla FL. (github.com/ale18V/FedChain)
+  - name: Stock Price Predictor
+    skills: GPU Programming Class Project
+    date: 2024
     points:
-      - Developed a Minecraft server plugin to entertain kids during free time for a previous job
-      - Published plugin to websites gaining 2K+ downloads and an average 4.5/5-star review
-      - Implemented continuous delivery using TravisCI to build the plugin upon new a release
-      - Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin
+      - Designed a neural network for stock prediction in pure Python/NumPy and PyTorch.
+      - Ported the algorithm to CUDA achieving ~3× speedup over CPU. (github.com/ale18V/CudaStonks)
+
 skills:
+  - category: Programming Languages
+    skills: Python, Java, C/C++, JavaScript, TypeScript, PHP, SQL, Bash
+  - category: Tools and Frameworks
+    skills: Git and Github, Linux, Docker, Web3, FastAPI, Flask, React, Vite, React-Native, OpenAPI, gRPC, MySQL
+  - category: Expertise
+    skills: Web3, Blockchain, Machine Learning & AI, Cybersecurity & Penetration Testing, Competitive Programming, Compilers, Operating Systems, Network Protocols
   - category: Languages
-    skills: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, R
-  - category: Frameworks
-    skills: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI
-  - category: Developer Tools
-    skills: Git, Docker, TravisCI, Google Cloud Platform, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse
-  - category: Libraries
-    skills: pandas, NumPy, Matplotlib
+    skills: English (Cambridge C1), Italian (Native)
