@@ -1,12 +1,12 @@
 #let resume(body) = {
-  set list(indent: 1em)
-  show list: set text(size: 0.92em)
+  set list(indent: 0.23em)
+  show list: set text(size: 0.86em)
   show link: underline
   show link: set underline(offset: 3pt)
 
   set page(
     paper: "us-letter",
-    margin: (x: 0.5in, y: 0.5in)
+    margin: (x: 0.4in, y: 0.4in)
   )
 
   set text(
@@ -52,23 +52,25 @@
 }
 
 #let edu_item(
-  name: "Sample University", 
-  degree: "B.S in Bullshit", 
-  location: "Foo, BA", 
-  date: "Aug. 1600 - May 1750"
+  name: "Sample University",
+  degree: "B.S in Bullshit",
+  location: "Foo, BA",
+  date: "Aug. 1600 - May 1750",
+  ..points
 ) = {
-  set block(above: 0.7em, below: 1em)
-  pad(left: 1em, right: 0.5em, grid(
-    columns: (3fr, 1fr),
-    align(left)[
-      *#name* \
-      _#degree _
-    ],
-    align(right)[
-      #location \
-      _#date _
-    ]
-  ))
+  set block(above: 0.7em, below: 1em, )
+  pad(left: 0.46em, right: 0.23em, box[
+    #grid(
+      columns: (3fr, 1fr),
+      align(left)[
+        *#name* - #degree
+      ],
+      align(right)[
+        #date
+      ]
+    )
+    #list(..points)
+  ])
 }
 
 #let exp_item(
@@ -79,7 +81,7 @@
   ..points
 ) = {
     set block(above: 0.7em, below: 1em)
-    pad(left: 1em, right: 0.5em, box[
+    pad(left: 0.46em, right: 0.23em, box[
       #grid(
         columns: (3fr, 1fr),
         align(left)[
@@ -102,7 +104,7 @@
   ..points
 ) = {
   set block(above: 0.7em, below: 1em)
-  pad(left: 1em, right: 0.5em, box[
+  pad(left: 0.46em, right: 0.23em, box[
     *#name* | _#skills _ #h(1fr) #date
     #list(..points)
   ])

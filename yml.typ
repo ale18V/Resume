@@ -19,6 +19,7 @@
       degree: edu.degree,
       location: edu.location,
       date: edu.date,
+      ..edu.points
     )
   }
 }

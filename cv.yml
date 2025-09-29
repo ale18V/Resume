@@ -10,14 +10,22 @@ education:
     degree: MSc in Computer Science
     location: Lausanne, Switzerland
     date: Sep 2025 - Sep 2027
+    points:
+      - "Awarded MSc Excellence Fellowship"
   - name: University of Bologna
-    degree: "BSc in Computer Engineering (GPA: 29.38/30); 110/110 cum laude; two merit-based scholarships"
+    degree: "BSc in Computer Engineering"
     location: Bologna, Italy
     date: Sep 2021 - Nov 2024
+    points:
+      - "Final Grade: 110/110 cum laude"
+      - "GPA: 29.38/30"
+      - "Awarded two merit-based scholarships"
   - name: University of California, Riverside
-    degree: "Exchange Student (GPA: 3.95/4.0)"
+    degree: "Exchange Student in Computer Engineering"
     location: Riverside, CA
     date: Jan 2024 - Jul 2024
+    points:
+      - "GPA: 3.95/4.0"
 
 experience:
   - role: Software Engineer
